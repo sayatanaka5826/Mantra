@@ -6,11 +6,81 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body style="background-color: #FFDC5A;">
+    <nav class="container navbar navbar-expand-lg navbar-light" style="background-color: #FFDC5A;">
+      <div class="d-flex justify-content-center">
+        <% if admin_signed_in? %>
+          <%= link_to admin_root_path, class: 'navbar-brand' do %>
+            <%= image_tag("onionlogo.png", alt: "MANTRA") %>
+          <% end %>
+        <% else %>
+          <%= link_to root_path, class: 'navbar-brand' do %>
+            <%= image_tag("onionlogo.png", alt: "MANTRA") %>
+          <% end %>
+        <% end %>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <% if admin_signed_in? %>
+            <li>
+              ※管理者ログイン中
+            </li>
+            <li class="nav-item">
+              <%= link_to admin_items_path, class: "nav-link text-right" do %>
+                <button class="btn">
+                  メニュー管理
+                </button>
+              <% end %>
+            </li>
+            <li class="nav-item">
+              <%= link_to admin_notices_path, class: "nav-link text-right" do %>
+                <button class="btn">
+                  お知らせ管理
+                </button>
+              <% end %>
+            </li>
+            <li class="nav-item">
+              <%= link_to destroy_admin_session_path, method: :delete, class: "nav-link text-right" do %>
+                <button class="btn">
+                  ログアウト
+                </button>
+              <% end %>
+            </li>
+          <% else %>
+            <li class="nav-item">
+              <%= link_to menu_path, class: "nav-link text-right" do %>
+                <button class="btn">メニュー</button>
+              <% end %>
+            </li>
+            <li class="nav-item">
+              <%= link_to opening_path, class: "nav-link text-right" do %>
+                <button class="btn">営業時間</button>
+              <% end %>
+            </li>
+            <li class="nav-item">
+              <%= link_to access_path, class: "nav-link text-right" do %>
+                <button class="btn">アクセス</button>
+              <% end %>
+            </li>
+            <li class="nav-item">
+              <%= link_to contact_path, class: "nav-link text-right" do %>
+                <button class="btn">お問い合わせ</button>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
