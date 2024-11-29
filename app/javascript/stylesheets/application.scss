@@ -1,2 +1,12 @@
 @use '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Oi&family=Slackey&display=swap');
+
+.top-title {
+  font-family: "Slackey", sans-serif;
+  font-size: 250px;
+  font-wight: bold;
+  color: #0C6128;
+  max-height: 200px;
+}
+
 
