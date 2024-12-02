@@ -1,6 +1,6 @@
 @use '~bootstrap/scss/bootstrap';
-
 @import url('https://fonts.googleapis.com/css2?family=Oi&family=Slackey&display=swap');
+
 .header-button {
   font-family: "Slackey", sans-serif;
   border: 2px solid black !important;
@@ -13,7 +13,6 @@
   background-color: #0C6128;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oi&family=Slackey&display=swap');
 .about-title {
   text-align: center;
   font-family: "Slackey", sans-serif;
@@ -32,15 +31,14 @@
 .section-news {
   width: 100%;
   padding: 50px 0 100px 0;
-  background-color: #8806CE;
+  background-color: #FFDC5A;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oi&family=Slackey&display=swap');
 .news-title {
   text-align: center;
   font-family: "Slackey", sans-serif;
   font-size: 100px;
-  color: #FFDC5A;
+  color: #813796;
 }
 
 .news-card {
@@ -51,10 +49,16 @@
   border-radius: 25px !important;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  background-color: #F6E9BB;
+  background-color: #FAE6FA;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Oi&family=Slackey&display=swap');
+.menu-title {
+  font-family: "Slackey", sans-serif !important;
+  text-align: center;
+  font-size: 100px;
+  color: #500014;
+}
+
 .footer {
   font-family: "Slackey", sans-serif;
   font-size: 20px;
@@ -65,5 +69,84 @@
   height: 100px;
   background-color: #500014;
   color: #FFDC5A;
+}
+
+
+.navbar {
+  border-bottom: 3px solid #500014;
+}
+
+.top-page {
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
+  position: relative;
+  height: 900px;
+}
+
+.row {
+  display: flex; /* Flexboxを有効化 */
+  justify-content: center; /* 横方向中央寄せ */
+  align-items: flex-start; /* 縦方向の揃え方を上部に設定 */
+  gap: 20px; /* 子要素間の間隔を設定（オプション） */
+}
+
+.card-opening-hour {
+  margin-bottom: 40px;
+  border: 3px solid #500014;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #F5EEF6;
+}
+
+.card-opening-hour-header {
+  font-family: "Slackey", sans-serif;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #0C6128;
+  font-size: 25px;
+  color: #F8F1D7;
+}
+
+.card-contact {
+  border: 3px solid #500014;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #EAF6EE;
+}
+
+.card-contact-header {
+  font-family: "Slackey", sans-serif;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #813796;
+  font-size: 25px;
+  color: #F8F1D7;
+}
+
+.card-menu {
+  margin-left: 40px;
+  padding: 0 !important;
+  border: 3px solid #500014;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* 縦方向の配置 */
+  justify-content: center; /* カード内の中央寄せ */
+  align-items: center;
+}
+
+.toppage-menu-image-container {
+  text-align: center;
+}
+
+.toppage-menu-img {
+  max-width: 100%; /* 親要素に合わせてサイズ調整 */
+  height: auto; /* アスペクト比を維持 */
+  display: inline-block; /* 中央寄せに必要 */
+}
+
+.card-menu-text {
 
 }
+
+

@@ -10,17 +10,17 @@
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-  
-  <body style="background-color: #FFDC5A;">
-    <nav class="container navbar navbar-expand-lg navbar-light" style="background-color: #FFDC5A;">
+
+  <body style="background-color: #F8F1D7;">
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light" style="background-color: #FEE56F; margin: 0;">
       <div class="d-flex justify-content-center">
         <% if admin_signed_in? %>
           <%= link_to admin_root_path, class: 'navbar-brand' do %>
-            <%= image_tag("onionlogo.png", alt: "MANTRA") %>
+            <%= image_tag("mantralogo.png", alt: "MANTRA") %>
           <% end %>
         <% else %>
           <%= link_to root_path, class: 'navbar-brand' do %>
-            <%= image_tag("onionlogo.png", alt: "MANTRA") %>
+            <%= image_tag("mantralogo.png", alt: "MANTRA") %>
           <% end %>
         <% end %>
       </div>
@@ -86,7 +86,5 @@
 </html>
 
 <div class="footer">
-  <div>
-    MANTRA 🄫 2024
-  </div>
+  MANTRA 🄫 2024
 </div>
