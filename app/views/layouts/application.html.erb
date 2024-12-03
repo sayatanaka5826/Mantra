@@ -7,20 +7,21 @@
     <%= csp_meta_tag %>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/8cc696f355.js" crossorigin="anonymous"></script>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body style="background-color: #F8F1D7;">
-    <nav class="container-fluid navbar navbar-expand-lg navbar-light" style="background-color: #FEE56F; margin: 0;">
+  <body style="background-color: #EEB006;">
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light" style="background-color: #EEB006; margin: 0;">
       <div class="d-flex justify-content-center">
         <% if admin_signed_in? %>
           <%= link_to admin_root_path, class: 'navbar-brand' do %>
-            <%= image_tag("mantralogo.png", alt: "MANTRA") %>
+            <%= image_tag("onion.png", alt: "MANTRA") %>
           <% end %>
         <% else %>
           <%= link_to root_path, class: 'navbar-brand' do %>
-            <%= image_tag("mantralogo.png", alt: "MANTRA") %>
+            <%= image_tag("onion.png", alt: "MANTRA") %>
           <% end %>
         <% end %>
       </div>
@@ -85,6 +86,3 @@
   </body>
 </html>
 
-<div class="footer">
-  MANTRA 🄫 2024
-</div>
