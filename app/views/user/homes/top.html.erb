@@ -1,14 +1,22 @@
 <div class="container-fluid text-center">
-  <div class="toppage-title-container">
+  <div class="row toppage-title-container">
     <div class="toppage-title">
       <%= image_tag("MANTRA2.png", alt: "MANTRA") %>
-      <%= image_tag("スパイスカレーとアイスクリーム.png", alt: "スパイスカレーとアイスクリーム", class: "title-ice-img") %>
+      <%= image_tag("スパイスカレーとアイスクリーム.png", alt: "スパイスカレーとアイスクリーム", class: "curry-and-ice") %>
     </div>
   </div>
-  <div class="toppage-img-container" style="margin-top: 20px;">
-    <div class="toppage-image">
-      <%= image_tag("curryimage2.png", alt: "バターチキンカレー") %>
-      <%= link_to menu_path, class: "to-menu-button" do %>
+  <div class="row toppage-curry-container" style="margin-top: 20px;">
+    <div class="toppage-curry">
+      <%= image_tag("curryimage2.png", alt: "バターチキンカレー", class: "curry-img") %>
+      <%= link_to menu_path, class: "to-menu-button-curry" do %>
+        <button class="see-more-button">SEE MORE <i class="fa-regular fa-square-caret-right" style="color: black;"></i></button>
+      <% end %>
+    </div>
+  </div>
+  <div class="row toppage-ice-container">
+    <div class="toppage-ice">
+      <%= image_tag("houjitee.png", alt: "ほうじ茶アイス", class: "ice-img") %>
+      <%= link_to menu_path, class: "to-menu-button-ice" do %>
         <button class="see-more-button">SEE MORE <i class="fa-regular fa-square-caret-right" style="color: black;"></i></button>
       <% end %>
     </div>
