@@ -14,7 +14,8 @@
 
   <body style="background-color: #EEB006;">
     <nav class="container-fluid navbar navbar-expand-lg navbar-light" style="background-color: #EEB006; margin: 0;">
-      <div class="d-flex justify-content-center">
+      <div class="col-4"></div>
+      <div class="col-4 d-flex justify-content-center">
         <% if admin_signed_in? %>
           <%= link_to admin_root_path, class: 'navbar-brand' do %>
             <%= image_tag("onion.png", alt: "MANTRA") %>
@@ -29,56 +30,58 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <% if admin_signed_in? %>
-            <li>
-              ※管理者ログイン中
-            </li>
-            <li class="nav-item">
-              <%= link_to admin_items_path, class: "nav-link text-right" do %>
-                <button>
-                  メニュー管理
-                </button>
-              <% end %>
-            </li>
-            <li class="nav-item">
-              <%= link_to admin_notices_path, class: "nav-link text-right" do %>
-                <button>
-                  お知らせ管理
-                </button>
-              <% end %>
-            </li>
-            <li class="nav-item">
-              <%= link_to destroy_admin_session_path, method: :delete, class: "nav-link text-right" do %>
-                <button>
-                  ログアウト
-                </button>
-              <% end %>
-            </li>
-          <% else %>
-            <li class="nav-item">
-              <%= link_to menu_path, class: "nav-link text-right" do %>
-                <button class="header-button">MENU</button>
-              <% end %>
-            </li>
-            <li class="nav-item">
-              <%= link_to opening_path, class: "nav-link text-right" do %>
-                <button class="header-button">OPENIGN HOUR</button>
-              <% end %>
-            </li>
-            <li class="nav-item">
-              <%= link_to access_path, class: "nav-link text-right" do %>
-                <button class="header-button">ACCESS</button>
-              <% end %>
-            </li>
-            <li class="nav-item">
-              <%= link_to contact_path, class: "nav-link text-right" do %>
-                <button class="header-button">CONTACT</button>
-              <% end %>
-            </li>
-          <% end %>
-        </ul>
+      <div class="col-4 d-flex justify-content-center">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto">
+            <% if admin_signed_in? %>
+              <li>
+                ※管理者ログイン中
+              </li>
+              <li class="nav-item">
+                <%= link_to admin_items_path, class: "nav-link text-right" do %>
+                  <button>
+                    メニュー管理
+                  </button>
+                <% end %>
+              </li>
+              <li class="nav-item">
+                <%= link_to admin_notices_path, class: "nav-link text-right" do %>
+                  <button>
+                    お知らせ管理
+                  </button>
+                <% end %>
+              </li>
+              <li class="nav-item">
+                <%= link_to destroy_admin_session_path, method: :delete, class: "nav-link text-right" do %>
+                  <button>
+                    ログアウト
+                  </button>
+                <% end %>
+              </li>
+            <% else %>
+              <li class="nav-item">
+                <%= link_to menu_path, class: "nav-link text-right" do %>
+                  <button class="header-button">MENU</button>
+                <% end %>
+              </li>
+              <li class="nav-item">
+                <%= link_to opening_path, class: "nav-link text-right" do %>
+                  <button class="header-button">OPENING HOUR</button>
+                <% end %>
+              </li>
+              <li class="nav-item">
+                <%= link_to access_path, class: "nav-link text-right" do %>
+                  <button class="header-button">ACCESS</button>
+                <% end %>
+              </li>
+              <li class="nav-item">
+                <%= link_to contact_path, class: "nav-link text-right" do %>
+                  <button class="header-button">CONTACT</button>
+                <% end %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
       </div>
     </nav>
 
