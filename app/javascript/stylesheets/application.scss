@@ -44,6 +44,10 @@
   border-radius: 10px !important;
 }
 
+.curry-img:hover {
+  border: 3px solid #FF0800 !important;
+}
+
 .to-menu-button-curry {
   position: absolute;
   bottom: 30px;
@@ -75,5 +79,9 @@
 }
 
 .toppage-ice-card:hover {
-  background-color: #C8FCEB;
+  background-color: #FF0800;
+}
+
+.ice-img {
+  border: 2px solid black !important;
 }
