@@ -76,6 +76,8 @@
 .toppage-ice-card {
   border: 3px solid black !important;
   border-radius: 10px;
+  padding: 10px !important;
+  justify-content: center !important;
 }
 
 .toppage-ice-card:hover {
@@ -84,4 +86,13 @@
 
 .ice-img {
   border: 2px solid black !important;
+}
+
+
+
+
+@media screen and (max-width:1440px) {
+  .ice-img {
+    max-width: 100%;
+  }
 }
