@@ -24,13 +24,19 @@
       <div class="card toppage-ice-card">
         <div style="text-align: center;">
           <%= image_tag("hojicha.png", alt: "ほうじ茶アイスクリーム", class: "ice-img") %>
-          <h5>チャイマサラ:ほうじ茶:白玉</h5>
-          <p>
-            シナモンやクローブ、フェンネルなどブレンドしたスパイスと<br>
-            紅茶の代わりにほうじ茶葉を使った和風なチャイをベースに<br>
-            もちもちな求肥も入ってるゾ☆
+          <h5 class="ice-name ml-1">チャイマサラ:ほうじ茶:白玉</h5>
+          <p class="ice-text ml-1">
+            ▸シナモンやクローブ、フェンネルなどブレンドしたスパイスと<br>
+            　紅茶の代わりにほうじ茶葉を使った和風なチャイをベースに<br>
+            　もちもちな求肥も入ってるゾ☆
           </p>
-          <p>￥400(税抜)</p>
+          <hr class="divider ice-divider">
+          <div class="d-flex justify-content-between align-items-center">
+            <p class="ice-price ml-2">￥400(税抜)</p>
+            <%= link_to menu_path do %>
+              <button class="to-menu-button-ice"><i class="fa-regular fa-square-caret-right" style="color: black;"></i></button>
+            <% end %>
+          </div>
         </div>
       </div>
     </div>

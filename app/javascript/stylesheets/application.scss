@@ -1,6 +1,8 @@
 @use '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Oi&family=Slackey&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bakbak+One&family=Passion+One:wght@400;700;900&family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bakbak+One&family=M+PLUS+1p&family=Passion+One:wght@400;700;900&family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bakbak+One&family=Dela+Gothic+One&family=DotGothic16&family=M+PLUS+1p:wght@400;700&family=Passion+One:wght@400;700;900&family=Rammetto+One&display=swap');
 
 .header-button {
   font-family: "Anton SC", sans-serif;
@@ -45,7 +47,7 @@
 }
 
 .curry-img:hover {
-  border: 3px solid #FF0800 !important;
+  border: 3px solid #D2DDF1 !important;
 }
 
 .to-menu-button-curry {
@@ -81,13 +83,50 @@
 }
 
 .toppage-ice-card:hover {
-  background-color: #FF0800;
+  background-color: #D2DDF1;
+  box-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
 }
 
 .ice-img {
   border: 2px solid black !important;
 }
 
+.ice-name {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  text-align: start;
+  margin-top: 10px;
+}
+
+.ice-text {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 900;
+  text-align: start;
+  font-size: 10px;
+}
+
+.ice-price {
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 900;
+  text-align: start;
+  font-size: 20px;
+}
+
+.ice-divider {
+  border: 0;
+  border-top: 2px solid black; 
+}
+
+.to-menu-button-ice {
+  border: 2px solid black !important;
+  width: 50px;
+  height: 35px;
+ 
+}
+
+.to-menu-button-ice:hover {
+  background-color: #D2DDF1 !important;
+}
 
 
 
