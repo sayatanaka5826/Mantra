@@ -1,9 +1,11 @@
 @use '~bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css2?family=Oi&family=Slackey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bakbak+One&family=Passion+One:wght@400;700;900&family=Rammetto+One&display=swap');
 
 .header-button {
   font-family: "Slackey", sans-serif;
   border: 2px solid black !important;
+  border-radius: 3px !important;
 }
 
 .toppage-title-container {
@@ -17,8 +19,8 @@
 
 .curry-and-ice {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -4px;
+  right: -50px;
   margin-right: 3px;
 }
 
@@ -32,12 +34,14 @@
 }
 
 .curry-img {
-  border: 6px solid black !important;
+  border: 3px solid white !important;
+  box-shadow: 0 0 0 5px black !important;
+  border-radius: 10px !important;
 }
 
 .to-menu-button-curry {
   position: absolute;
-  bottom: 40px;
+  bottom: 30px;
   right: 30px;
 }
 
@@ -49,22 +53,9 @@
   font-size: 25px;
 }
 
-.toppage-ice-container {
-  position: relative;
-  display: inline-block;
-  margin: 50px 0 50px 125px;
-}
-
-.toppage-ice {
-  position: relative;
-}
-
-.to-menu-button-ice {
-  position: absolute;
-  bottom: 40px;
-  right: 30px;
-}
-
-.ice-img {
-  border: 6px solid black !important;
+.toppage-ice-title {
+  font-family: "Anton SC", sans-serif;
+  font-size: 80px;
+  color: black;
+  margin-left: 5px;
 }
