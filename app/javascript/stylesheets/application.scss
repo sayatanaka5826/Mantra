@@ -4,6 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bakbak+One&family=M+PLUS+1p&family=Passion+One:wght@400;700;900&family=Rammetto+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bakbak+One&family=Dela+Gothic+One&family=DotGothic16&family=M+PLUS+1p:wght@400;700&family=Passion+One:wght@400;700;900&family=Rammetto+One&display=swap');
 
+
+.text-color {
+  color: black;
+}
+
 .header-button {
   font-family: "Anton SC", sans-serif;
   border: 2px solid black !important;
@@ -66,6 +71,7 @@
 
 .see-more-button:hover {
   background-color: #FF0800;
+  font-size: 20px;
 }
 
 .toppage-ice-title {
@@ -78,17 +84,18 @@
 .toppage-ice-card {
   border: 3px solid black !important;
   border-radius: 10px;
-  padding: 10px !important;
   justify-content: center !important;
 }
 
 .toppage-ice-card:hover {
-  background-color: #D2DDF1;
+  background-color: #FF0800;
+  color: white;
   box-shadow: -4px 4px 2px rgba(0, 0, 0, 1);
 }
 
 .ice-img {
   border: 2px solid black !important;
+  margin: 10px;
 }
 
 .ice-name {
@@ -96,6 +103,7 @@
   font-weight: 700;
   text-align: start;
   margin-top: 10px;
+  padding: 0 10px;
 }
 
 .ice-text {
@@ -103,6 +111,7 @@
   font-weight: 900;
   text-align: start;
   font-size: 10px;
+  padding: 10px;
 }
 
 .ice-price {
@@ -114,14 +123,7 @@
 
 .ice-divider {
   border: 0;
-  border-top: 2px solid black; 
-}
-
-.to-menu-button-ice {
-  border: 2px solid black !important;
-  width: 50px;
-  height: 35px;
- 
+  border-top: 2px solid black;
 }
 
 .to-menu-button-ice:hover {
@@ -130,8 +132,10 @@
 
 
 
+
+
 @media screen and (max-width:1440px) {
   .ice-img {
-    max-width: 100%;
+    max-width: 94%;
   }
 }
